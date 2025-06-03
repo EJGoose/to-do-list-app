@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <title>Get It Done</title>
+</head>
+<body>
+    <main>
+        <!-- Into to the site -->
+        <header>
+            <button onclick="nightTimeDayTime()" class="theme-selector">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--dark-blue)" class="bi bi-circle-half" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"/>
+                </svg>
+                <span>Theme</span>
+            </button>
+            <br>
+            <h1>Welcome to the future of productivity</h1>
+        </header>
+        <!-- Form to gather information -->
+        <section class="action-collector-section">
+            <form id = "insert-action">
+                <label for= "action-content">Add an Action!</label>
+                <input type="text" id="action-content" name="action-content" placeholder="Productivity Starts with a Dream..">
+                <label for="action-further-details">Would you like to add further details?</label>
+                <textarea id="action-further-details" name = "action-further-details" row="4" cols="50" form="insert-action" placeholder="Type your text here:"></textarea>
+                <input id="submit-button" type="button" value="submit">
+            </form>
+            <hr>
+        </section>
+        <!-- Actions section -->
+        <section>
+            <ul class="action-list">
+            </ul>
+        </section>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
+
+
